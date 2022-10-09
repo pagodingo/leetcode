@@ -15,7 +15,6 @@
  */
 var dominantIndex = function (nums) {
   let largest = 0;
-  let secondLargest = 0;
 
   for (var i = 0; i < nums.length; ++i) {
     if (nums[i] > largest) {
