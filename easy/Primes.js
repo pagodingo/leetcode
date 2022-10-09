@@ -28,4 +28,4 @@ var isPrime = (num) => {
   return isPrime
 };
 
-console.log(nPrimes(30))
+console.log(nPrimes(7))
