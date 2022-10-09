@@ -16,14 +16,12 @@ var nPrimes = (n) => {
 };
 
 var isPrime = (num) => {
-  var isPrime = true
-  
   for (var i = 2; i < num; ++i) {
     if (num % i === 0){
-      isPrime = false
+      return false
     }
   }
-  return isPrime
+  return true
 };
 
 console.log(nPrimes(7))
