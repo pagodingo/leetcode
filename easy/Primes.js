@@ -6,11 +6,8 @@
 
 var nPrimes = (n) => {
   let primes = []
+
   for (var i = 1; i <= n; ++i){
-    if (i === 1){
-      primes.push(i)
-      continue;
-    }
     if (isPrime(i)){
       primes.push(i)
     }
@@ -20,6 +17,7 @@ var nPrimes = (n) => {
 
 var isPrime = (num) => {
   var isPrime = true
+  
   for (var i = 2; i < num; ++i) {
     if (num % i === 0){
       isPrime = false
