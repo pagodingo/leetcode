@@ -7,7 +7,7 @@
 var nPrimes = (n) => {
   let primes = []
 
-  for (var i = 1; i <= n; ++i){
+  for (var i = 2; i <= n; ++i){
     if (isPrime(i)){
       primes.push(i)
     }
@@ -23,5 +23,3 @@ var isPrime = (num) => {
   }
   return true
 };
-
-console.log(nPrimes(7))
